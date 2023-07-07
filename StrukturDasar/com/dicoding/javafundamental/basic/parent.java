@@ -1,0 +1,32 @@
+package StrukturDasar.com.dicoding.javafundamental.basic;
+
+import java.util.Date;
+
+import org.apache.commons.lang3.time.DateUtils;
+
+import StrukturDasar.com.dicoding.javafundamental.basic.kendaraan.Kereta;
+import StrukturDasar.com.dicoding.javafundamental.basic.kendaraan.Mobil;
+import StrukturDasar.com.dicoding.javafundamental.basic.kendaraan.Motor;
+import StrukturDasar.com.dicoding.javafundamental.basic.musik.Gitar;
+
+
+
+
+public class parent {
+    public static void main(String[] args) {
+       System.out.println("Hello world!"); 
+
+       Gitar.bunyi();
+
+       Mobil.jumlahBan();
+       Motor.jumlahBan();
+       Kereta.jumlahBan();
+
+    //    menampilkan hari tanggal jam
+        Date today = new Date();
+        System.out.println("Hari ini = " + today);
+        Date tomorrow = DateUtils.addDays(today, 1);
+        System.out.println("Besok = " + tomorrow);
+       
+    }
+}
