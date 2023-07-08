@@ -1,0 +1,13 @@
+package StrukturDasar.com.dicoding.javafundamental.basic.accesmodifier.package3;
+
+public class Perhitungan {
+    public static int nilai = 0;
+
+    protected static int getNilai(){
+        return nilai;
+    }
+
+    Perhitungan() {
+        nilai++;
+    }
+}
