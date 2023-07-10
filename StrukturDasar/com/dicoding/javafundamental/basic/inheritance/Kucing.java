@@ -1,10 +1,10 @@
 package StrukturDasar.com.dicoding.javafundamental.basic.inheritance;
 
-public class  Kucing extends Hewan {
+public class  Kucing extends Hewan implements Mamalia {
     
 
-        private String ras;
-        private String habitat;
+    private String ras;
+    private String habitat;
 
         public Kucing(String ras, String habitat) {
             this.ras = ras;
@@ -37,4 +37,6 @@ public class  Kucing extends Hewan {
     public void makan(String food) { // overloading
         System.out.println("Kucing makan " + food);
     }
+
+    
 }
